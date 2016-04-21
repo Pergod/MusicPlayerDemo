@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="64dp">
+
+    <ImageView
+        android:id="@+id/big_icon"
+        android:scaleType="fitXY"
+        android:src="@drawable/music_icon"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/title_text_view"
+        android:textSize="16sp"
+        android:hint="this is a title"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:hint="this is context"
+        android:id="@+id/context_text_view"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_text_view"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="5dp"/>
+
+    <ImageButton
+        android:id="@+id/controll_button"
+        android:scaleType="fitXY"
+        android:background="@color/white"
+        android:src="@drawable/play"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:clickable="true"
+        android:layout_marginLeft="280dp"
+        android:layout_alignBottom="@id/context_text_view"/>
+
+    <ImageButton
+        android:id="@+id/next_notif_button"
+        android:clickable="true"
+        android:background="@color/white"
+        android:scaleType="fitXY"
+        android:src="@drawable/next"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/controll_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"/>
+
+    <ImageButton
+        android:clickable="true"
+        android:id="@+id/previous_notif_icon"
+        android:background="@color/white"
+        android:scaleType="fitXY"
+        android:src="@drawable/previous"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/context_text_view"
+        android:layout_toRightOf="@+id/title_text_view"
+        android:layout_toEndOf="@+id/title_text_view" />
+
+</RelativeLayout>

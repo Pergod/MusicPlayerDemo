@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Music Player</string>
+    <string name="list">播放列表</string>
+</resources>
